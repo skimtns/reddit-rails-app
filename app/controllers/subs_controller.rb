@@ -24,7 +24,7 @@ class SubsController < ApplicationController
   # Model, all logic code 
     # ordering, printing 
 
-  before_action :set_sub, only: [:show, :update. :edit, :destroy]
+  before_action :set_sub, only: [:show, :update, :edit, :destroy]
   # before_action: set_sub, except: [:index, :new, :create]
 
   #rake notes
@@ -59,7 +59,7 @@ class SubsController < ApplicationController
     # creates a sub in memory 
     @sub = Sub.new 
     # renders the sub form 
-    render partial :"form"
+    render partial: "form"
   end
 
   # post 

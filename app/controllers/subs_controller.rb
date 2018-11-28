@@ -78,7 +78,7 @@ class SubsController < ApplicationController
   def edit
     # @sub = Sub.find(params[:id])
     # render the edit form 
-    render partial :"form"
+    render partial: "form"
     # render 'subs/form' ~ same thing 
   end
 
@@ -101,7 +101,7 @@ class SubsController < ApplicationController
     
   private 
       def sub_params
-        params.require (:sub).permit(:name)
+        params.require(:sub).permit(:name)
   end 
 
   def set_sub

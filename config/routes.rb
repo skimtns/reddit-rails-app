@@ -20,6 +20,10 @@ Rails.application.routes.draw do
   resources :subs do
     resources :topics 
   end 
-
+  
+  resources :topics do
+    resources :comments 
+  end 
+  
 end
 

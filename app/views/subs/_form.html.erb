@@ -2,7 +2,7 @@
 
 <%= form_for @sub do |f| %>
   <%= f.label :name %>
-  <%= f.text_field :name, require :true, autofocus: true %>
+  <%= f.text_field :name, required: true, autofocus: true %>
   <%= f.submit %>
   
 <% end %>
